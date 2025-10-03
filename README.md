@@ -3,56 +3,26 @@
  ### [YouTube Demonstration](https://youtu.be/oyiivb2ygSo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+The project involved setting up OS Ticket, a web-based help desk application, on a Windows 10 Pro virtual machine. The process included installing and configuring IIS (Internet Information Services) to act as a web server, setting up PHP with necessary extensions, and installing MySQL to create a dedicated database for OS Ticket. The core OS Ticket files were uploaded to the server, configured, and tested through both the end-user portal and the agent interface. Finally, basic security hardening was performed by protecting the configuration file and removing the setup folder to secure sensitive credentials and prevent unauthorized reinstallation.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>PHP Manager (IIS plugin)</b> 
+- <b>URL Rewrite (IIS extension)</b>
+- <b>VC++ Redistributable</b>
+- <b>MySQL Installer</b>
+- <b>HeidiSQL</b>
+- <b>OS Ticket (web application)</b>
 
 <h2>Environments Used </h2>
 
-- <b>Windows 10</b> (21H2)
+- <b>Windows 10 Pro – host operating system</b>
+- <b>Virtual Machine – isolated lab environment for installation and testing</b>
+- <b>IIS (web server)</b>
+- <b>MySQL Server (database)</b>
+- <b>PHP Runtime (server-side scripting environment)</b>
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
